@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <title>Exme</title>
+      <link rel="shortcut icon" type="image/png" href="http://icons.iconarchive.com/icons/tinylab/android-lollipop-apps/16/Skala-icon.png"/>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </head>
+
+    <body>
+      <div class="navbar-fixed">
+        <nav>
+          <div class="nav-wrapper teal lighten-2">
+            <a href="index.html" class="brand-logo center" style="margin-left: 1%">Exme</a>
+            <form action="perform_search.html" method="get">
+              <div class="input-field">
+                <input id="search" name="keywords" type="search" required>
+                <label for="search"><i class="material-icons">search</i></label>
+                <i class="material-icons">close</i>
+              </div>
+            </form>
+          </div>
+        </nav>
+      </div>
+      <div class="container">
+        <br>
+        <div class="row">
+          <form action="perform_search.html" method="get">
+            <div class="input-field col s9">
+              <input name="keywords" id="url" type="text" class="validate">
+              <label for="url">URL</label>
+            </div>
+            <div class="col s3">
+              <button class="btn waves-effect waves-light" type="submit">Explore
+                <i class="material-icons right">send</i>
+              </button>
+            </div>
+          </form>
+        </div>
+        <br>
+        <div class="row">
+          <form action="perform_search.html" method="get">
+            <div class="input-field col s9">
+              <textarea name="keywords" id="textarea1" class="materialize-textarea"></textarea>
+              <label for="textarea1">Testo</label>
+            </div>
+            <div class="col s3">
+              <button class="btn waves-effect waves-light" style="margin-top:20%" type="submit">Explore
+                <i class="material-icons right">send</i>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!--Import jQuery before materialize.js-->
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+    </body>
+  </html>
